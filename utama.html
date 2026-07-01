@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeknoByte | Portal Teknologi Komputer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- ===================== HEADER ===================== -->
+      <header class="site-header">
+        <div class="header-inner">
+          <div class="logo-block">
+            <div class="logo-icon">
+              <svg viewBox="0 0 48 48" width="42" height="42">
+                <rect
+                  x="4"
+                  y="8"
+                  width="40"
+                  height="26"
+                  rx="3"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                />
+                <rect x="16" y="38" width="16" height="3" fill="currentColor" />
+                <rect x="20" y="34" width="8" height="5" fill="currentColor" />
+                <path
+                  d="M12 16 L18 22 L12 28"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <line
+                  x1="22"
+                  y1="28"
+                  x2="34"
+                  y2="28"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title">AMD<em>Indonesia</em></span>
+              <span class="logo-sub"
+                >Portal Berita &amp; Edukasi Teknologi Komputer</span
+              >
+            </div>
+          </div>
+          <div class="header-tagline">
+            <span class="blink-dot"></span> SISTEM
+            ONLINE&nbsp;&nbsp;|&nbsp;&nbsp;<span id="live-clock">00:00:00</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- ===================== MARQUEE ===================== -->
+      <div class="marquee-bar">
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+          Selamat datang di halaman website AMD Indonesia &nbsp;•&nbsp; Ikuti
+          perkembangan Hardware, Software &amp; Artificial Intelligence terbaru
+          2026 &nbsp;•&nbsp; Login member untuk mengakses fitur tambahan
+          &nbsp;•&nbsp; Jangan lupa isi Buku Tamu sebelum meninggalkan halaman
+          ini! &nbsp;•&nbsp;
+        </marquee>
+      </div>
+
+      <!-- ===================== MAIN LAYOUT ===================== -->
+      <div class="main-layout">
+        <!-- ============ LEFT SIDEBAR ============ -->
+        <aside class="left-side">
+          <div class="panel">
+            <div class="panel-title">MENU WEB</div>
+            <nav class="menu-list" id="menu-web">
+              <a href="#" data-page="home" class="menu-item active">🏠 Home</a>
+              <a href="#" data-page="profil" class="menu-item">🧑‍💻 Profil</a>
+              <a href="#" data-page="berita" class="menu-item">📰 Berita</a>
+              <a href="#" data-page="galeri" class="menu-item">🖼️ Galeri</a>
+              <a href="#" data-page="bukutamu" class="menu-item"
+                >📖 Buku Tamu</a
+              >
+              <a href="#" data-page="kontak" class="menu-item"
+                >✉️ Kontak Kami</a
+              >
+              <a href="#" data-page="tentang" class="menu-item"
+                >ℹ️ Tentang Kami</a
+              >
+            </nav>
+          </div>
+
+          <div class="panel announcement">
+            <div class="panel-title">PENGUMUMAN</div>
+            <div class="announcement-body">
+              <p>
+                Selamat datang di website TeknoByte! Situs ini dibuat sebagai
+                media informasi seputar perkembangan teknologi komputer.
+              </p>
+              <p>
+                Mohon gunakan bahasa yang sopan pada kolom Buku Tamu dan Kontak
+                Kami. Terima kasih atas kunjungannya. 🙏
+              </p>
+            </div>
+          </div>
+        </aside>
+
+        <!-- ============ CENTER CONTENT ============ -->
+        <main class="content-area">
+          <!-- HOME -->
+          <section class="page-content active" id="page-home">
+            <h2 class="content-title">Selamat Datang di TeknoByte</h2>
+            <p class="lead">
+              Portal informasi seputar <strong>Teknologi Komputer</strong>:
+              hardware, software, jaringan, hingga kecerdasan buatan (AI).
+            </p>
+
+            <div class="home-grid">
+              <div class="home-card">
+                <div class="home-card-icon">🖥️</div>
+                <h3>Hardware</h3>
+                <p>
+                  Ulasan komponen komputer terbaru: prosesor, GPU, RAM, hingga
+                  storage generasi terbaru.
+                </p>
+              </div>
+              <div class="home-card">
+                <div class="home-card-icon">🧠</div>
+                <h3>Software &amp; AI</h3>
+                <p>
+                  Perkembangan sistem operasi, aplikasi, dan kecerdasan buatan
+                  yang mengubah cara kita bekerja.
+                </p>
+              </div>
+              <div class="home-card">
+                <div class="home-card-icon">🌐</div>
+                <h3>Jaringan</h3>
+                <p>
+                  Tips seputar jaringan komputer, keamanan siber, dan
+                  konektivitas internet masa kini.
+                </p>
+              </div>
+            </div>
+
+            <p class="hint">
+              👉 Silakan klik menu di sebelah kiri (Profil, Berita, Galeri,
+              dll.) untuk menjelajahi konten lainnya.
+            </p>
+          </section>
+
+          <!-- PROFIL -->
+          <section class="page-content" id="page-profil">
+            <h2 class="content-title">Profil Website</h2>
+            <p><strong>Nama Website:</strong> TeknoByte</p>
+            <p><strong>Tema:</strong> Teknologi Komputer</p>
+            <p>
+              <strong>Tujuan:</strong> Menyajikan informasi seputar dunia
+              teknologi komputer secara sederhana dan mudah dipahami oleh
+              pelajar maupun umum.
+            </p>
+            <p>
+              <strong>Dibuat dengan:</strong> HTML, CSS, dan JavaScript sebagai
+              tugas praktik pembuatan website (Design 6).
+            </p>
+            <div class="mini-divider"></div>
+            <p>
+              Website ini menampilkan struktur khas portal informasi: header,
+              menu navigasi, area konten, form login, galeri foto, pengumuman,
+              dan footer — sesuai kaidah dasar pembangunan halaman web statis.
+            </p>
+          </section>
+
+          <!-- BERITA -->
+          <section class="page-content" id="page-berita">
+            <h2 class="content-title">Berita Teknologi Terbaru</h2>
+            <article class="news-item">
+              <h3>Prosesor Generasi Baru Meningkatkan Efisiensi Daya</h3>
+              <span class="news-date">📅 28 Juni 2026</span>
+              <p>
+                Produsen chip terus menghadirkan arsitektur baru yang
+                mengedepankan efisiensi daya tanpa mengorbankan performa, cocok
+                untuk laptop tipis dan perangkat mobile.
+              </p>
+            </article>
+            <article class="news-item">
+              <h3>Adopsi Kecerdasan Buatan di Dunia Kerja Semakin Luas</h3>
+              <span class="news-date">📅 20 Juni 2026</span>
+              <p>
+                Berbagai perusahaan mengintegrasikan asisten berbasis AI untuk
+                membantu pekerjaan administratif, analisis data, hingga
+                pengembangan perangkat lunak.
+              </p>
+            </article>
+            <article class="news-item">
+              <h3>Keamanan Siber Jadi Prioritas Utama Perusahaan Digital</h3>
+              <span class="news-date">📅 12 Juni 2026</span>
+              <p>
+                Meningkatnya serangan siber mendorong perusahaan untuk
+                memperkuat sistem keamanan jaringan dan melatih karyawan
+                mengenali potensi ancaman digital.
+              </p>
+            </article>
+          </section>
+
+          <!-- GALERI (dalam konten) -->
+          <section class="page-content" id="page-galeri">
+            <h2 class="content-title">Galeri Perangkat Komputer</h2>
+            <p class="lead">
+              Kumpulan ilustrasi perangkat &amp; komponen teknologi komputer.
+            </p>
+            <div class="gallery-grid" id="gallery-grid-main"></div>
+          </section>
+
+          <!-- BUKU TAMU -->
+          <section class="page-content" id="page-bukutamu">
+            <h2 class="content-title">Buku Tamu</h2>
+            <p>
+              Silakan tinggalkan pesan, kesan, atau saran Anda untuk website
+              ini.
+            </p>
+            <form id="guestbook-form" class="form-box">
+              <label>Nama</label>
+              <input
+                type="text"
+                id="gb-nama"
+                placeholder="Masukkan nama Anda"
+                required
+              />
+              <label>Pesan</label>
+              <textarea
+                id="gb-pesan"
+                rows="3"
+                placeholder="Tulis pesan dengan sopan..."
+                required
+              ></textarea>
+              <button type="submit" class="btn-primary">Kirim Pesan</button>
+            </form>
+            <div id="guestbook-list" class="guestbook-list"></div>
+          </section>
+
+          <!-- KONTAK -->
+          <section class="page-content" id="page-kontak">
+            <h2 class="content-title">Kontak Kami</h2>
+            <p>
+              Punya pertanyaan atau masukan seputar teknologi komputer? Hubungi
+              kami melalui saluran berikut:
+            </p>
+            <ul class="contact-list">
+              <li>📧 Email: info@teknobyte.example</li>
+              <li>📞 Telepon: (0761) 123-4567</li>
+              <li>📍 Alamat: Jl. Teknologi No. 6, Pekanbaru, Riau</li>
+              <li>🕐 Jam Layanan: Senin–Jumat, 08.00–16.00 WIB</li>
+            </ul>
+          </section>
+
+          <!-- TENTANG KAMI -->
+          <section class="page-content" id="page-tentang">
+            <h2 class="content-title">Tentang Kami</h2>
+            <p>
+              TeknoByte adalah portal edukasi yang berfokus pada penyebaran
+              informasi seputar teknologi komputer secara ringkas dan mudah
+              dipahami.
+            </p>
+            <p>
+              Kami percaya bahwa literasi teknologi adalah bekal penting di era
+              digital, sehingga setiap orang — mulai dari pelajar hingga
+              profesional — dapat mengikuti perkembangan dunia komputer dengan
+              lebih percaya diri.
+            </p>
+            <p>
+              Website ini dibangun sebagai sarana pembelajaran pembuatan halaman
+              web menggunakan HTML, CSS, dan JavaScript.
+            </p>
+          </section>
+        </main>
+
+        <!-- ============ RIGHT SIDEBAR ============ -->
+        <aside class="right-side">
+          <div class="panel">
+            <div class="panel-title">MENU LOGIN</div>
+            <form class="login-form" id="login-form">
+              <label for="username">USERNAME</label>
+              <input type="text" id="username" placeholder="Username" />
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" placeholder="Password" />
+              <button type="submit" class="btn-login">LOGIN</button>
+              <p class="login-msg" id="login-msg"></p>
+            </form>
+          </div>
+
+          <div class="panel">
+            <div class="panel-title">FOTO GALERI</div>
+            <div class="gallery-side" id="gallery-grid-side"></div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- ===================== FOOTER ===================== -->
+      <footer class="site-footer">
+        <p>
+          &copy; <span id="year"></span> TeknoByte — Dibuat oleh
+          <strong>Nama Kalian</strong>. Seluruh hak cipta dilindungi.
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
