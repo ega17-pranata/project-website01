@@ -41,16 +41,48 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* ---------- Galeri Foto (ikon SVG bertema komputer, tanpa gambar eksternal) ---------- */
+  /* ---------- Galeri Foto (foto chipset & prosesor AMD, sumber Wikimedia Commons berlisensi CC) ---------- */
   const galleryData = [
-    { icon: "🖥️", label: "PC Desktop", color: "#0d3b66" },
-    { icon: "💻", label: "Laptop", color: "#0f4c5c" },
-    { icon: "🖱️", label: "Mouse", color: "#1b512d" },
-    { icon: "⌨️", label: "Keyboard", color: "#3c1642" },
-    { icon: "🧠", label: "Prosesor / AI", color: "#5c1a1a" },
-    { icon: "🌐", label: "Jaringan", color: "#12406b" },
-    { icon: "🔌", label: "Perangkat Keras", color: "#4a3210" },
-    { icon: "🗄️", label: "Server", color: "#26314a" },
+    {
+      img: "https://commons.wikimedia.org/wiki/Special:FilePath/AMD_B450_Chipset.jpg?width=400",
+      label: "Chipset AMD B450",
+      credit: "Wikiinger / Wikimedia Commons",
+    },
+    {
+      img: "https://commons.wikimedia.org/wiki/Special:FilePath/AMD_970_chipset_southbridge.png?width=400",
+      label: "Chipset AMD 970 Southbridge",
+      credit: "Wikimedia Commons",
+    },
+    {
+      img: "https://commons.wikimedia.org/wiki/Special:FilePath/AMD_Ryzen_9_9950X.jpg?width=400",
+      label: "Prosesor AMD Ryzen 9 9950X",
+      credit: "Wikimedia Commons (CC BY 4.0)",
+    },
+    {
+      img: "https://commons.wikimedia.org/wiki/Special:FilePath/AMD_Ryzen_7_5800X_19339.jpg?width=400",
+      label: "Prosesor AMD Ryzen 7 5800X",
+      credit: "Wikimedia Commons (CC BY-SA 3.0)",
+    },
+    {
+      img: "https://commons.wikimedia.org/wiki/Special:FilePath/AMD_Ryzen_7_1800X.jpg?width=400",
+      label: "AMD Ryzen 7 1800X terpasang di socket",
+      credit: "Wikimedia Commons (CC BY-SA 2.0)",
+    },
+    {
+      img: "https://commons.wikimedia.org/wiki/Special:FilePath/AMD_Radeon_HD7870_Die_and_Package.jpg?width=400",
+      label: "Die & Package Chipset GPU Radeon HD7870",
+      credit: "Wikimedia Commons",
+    },
+    {
+      img: "https://commons.wikimedia.org/wiki/Special:FilePath/AMD_Radeon_HD_6850_GPU.JPG?width=400",
+      label: "Chip GPU AMD Radeon HD 6850",
+      credit: "Wikimedia Commons (CC BY-SA 3.0)",
+    },
+    {
+      img: "https://commons.wikimedia.org/wiki/Special:FilePath/AMD_RADEON_HD3450_GPU.jpg?width=400",
+      label: "Chip GPU AMD Radeon HD 3450",
+      credit: "Wikimedia Commons",
+    },
   ];
 
   function renderGallery(container, count) {
@@ -59,9 +91,25 @@ document.addEventListener("DOMContentLoaded", () => {
     galleryData.slice(0, count).forEach((g) => {
       const div = document.createElement("div");
       div.className = "gallery-item";
-      div.style.background = g.color;
       div.title = g.label;
-      div.textContent = g.icon;
+
+      const img = document.createElement("img");
+      img.src = g.img;
+      img.alt = g.label;
+      img.loading = "lazy";
+      img.referrerPolicy = "no-referrer";
+      // Fallback ikon jika gambar gagal dimuat (mis. sedang offline)
+      img.onerror = () => {
+        div.classList.add("gallery-item--fallback");
+        div.textContent = "🧩";
+      };
+
+      const caption = document.createElement("span");
+      caption.className = "gallery-caption";
+      caption.textContent = g.label;
+
+      div.appendChild(img);
+      div.appendChild(caption);
       container.appendChild(div);
     });
   }
